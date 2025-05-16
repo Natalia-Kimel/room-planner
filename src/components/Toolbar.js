@@ -4,37 +4,37 @@ const objects = [
     {
         id: 1,
         name: 'Стол на одного',
-        image: '/assets/images/table1.JPEG',
+        image: `${process.env.PUBLIC_URL}/assets/images/table1.JPEG`,
     },
     {
         id: 2,
         name: 'Стол на двоих',
-        image: '/assets/images/table2.JPEG',
+        image: `${process.env.PUBLIC_URL}/assets/images/table2.JPEG`,
     },
     {
         id: 3,
         name: 'Круглый стол на компанию',
-        image: '/assets/images/tableRound4.JPEG',
+        image: `${process.env.PUBLIC_URL}/assets/images/tableRound4.JPEG`,
     },
     {
         id: 4,
         name: 'Квадратный стол на компанию',
-        image: '/assets/images/tableSquare4.JPEG', 
+        image: `${process.env.PUBLIC_URL}/assets/images/tableSquare4.JPEG`, 
     },
     {
         id: 5,
         name: 'Перегородка/стена',
-        image: '/assets/images/wall.JPEG', 
+        image: `${process.env.PUBLIC_URL}/assets/images/wall.JPEG`, 
     },
     {
         id: 6,
         name: 'Растительная перегородка',
-        image: '/assets/images/greenWall.JPEG', 
+        image: `${process.env.PUBLIC_URL}/assets/images/greenWall.JPEG`, 
     },
     {
         id: 7,
         name: 'Растение',
-        image: '/assets/images/plant.JPEG', 
+        image: `${process.env.PUBLIC_URL}/assets/images/plant.JPEG`, 
     },
   ];  
 
