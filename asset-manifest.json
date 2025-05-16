@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/room-planner/static/css/main.419b12c3.css",
-    "main.js": "/room-planner/static/js/main.df67ea5d.js",
+    "main.js": "/room-planner/static/js/main.25cf5992.js",
     "index.html": "/room-planner/index.html",
     "main.419b12c3.css.map": "/room-planner/static/css/main.419b12c3.css.map",
-    "main.df67ea5d.js.map": "/room-planner/static/js/main.df67ea5d.js.map"
+    "main.25cf5992.js.map": "/room-planner/static/js/main.25cf5992.js.map"
   },
   "entrypoints": [
     "static/css/main.419b12c3.css",
-    "static/js/main.df67ea5d.js"
+    "static/js/main.25cf5992.js"
   ]
 }
