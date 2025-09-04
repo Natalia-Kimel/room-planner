@@ -1,4 +1,4 @@
-import ObjectItem from './ObjectItem';
+import ObjectItem from '../ObjectItem/ObjectItem';
 
 const Board = ({ objects, onUpdatePosition }) => {
     return (

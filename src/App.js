@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Toolbar from './components/Toolbar';
-import Board from './components/Board';
+import Toolbar from './components/Toolbar/Toolbar';
+import Board from './components/Board/Board';
 import './App.css';
+import SaveItem from './components/SaveItem/SaveItem';
 
 let idCounter = 1;
 
@@ -23,25 +24,6 @@ const App = () => {
     );
   };
 
-  const handleSave = () => {
-    const data = JSON.stringify(objects);
-    const blob = new Blob([data], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'layout.json';
-    a.click();
-  };
-
-  const handleLoad = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      setObjects(JSON.parse(e.target.result));
-    };
-    reader.readAsText(file);
-  };
-
   return (
     <>
       <div className="container">
@@ -50,15 +32,7 @@ const App = () => {
           objects={objects}
           onUpdatePosition={handleUpdatePosition}
         />
-        <div className="actions">
-          <button onClick={handleSave} className="btn">Save Layout</button>
-          <input
-            type="file"
-            accept="application/json"
-            onChange={handleLoad}
-            className="file-input"
-          />
-        </div>
+        <SaveItem />
       </div>
     </>
   );
